@@ -7,7 +7,7 @@ export default function Drafts() {
   return (
     <div className="container">
       <div className="content">
-        <h3>No Draft messages Available</h3>
+        <h3>Nothing in Drafts</h3>
       </div>
     </div>
   );

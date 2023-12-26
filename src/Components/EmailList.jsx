@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import moment from 'moment'
 
 const EmailList = ({ onSelectEmail }) => {
   const emails = [
@@ -55,6 +56,7 @@ const EmailList = ({ onSelectEmail }) => {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div className="email-subject">{email.subject}</div>
             <div className="email-sender">{email.sender}</div>
+            <div className="email-sender">{moment(email.date).format("DD-MM-YY HH:MM")}</div>
           </div>
           <div className="email-sender">
             {email.body && email.body?.length > 200

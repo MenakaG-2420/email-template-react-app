@@ -16,7 +16,7 @@ const GmailInterface = () => {
           {selectedEmail == null ? (
             <EmailList onSelectEmail={setSelectedEmail} />
           ) : (
-            <EmailPreview email={selectedEmail} />
+            <EmailPreview email={selectedEmail} setSelectedEmail={setSelectedEmail}/>
           )}
         </div>
       </div>

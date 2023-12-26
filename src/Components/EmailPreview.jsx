@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-const EmailPreview = ({ email }) => {
+import { Link } from 'react-router-dom';
+const EmailPreview = ({ email ,setSelectedEmail}) => {
     const [showFullBody, setShowFullBody] = useState(false);
 
     const handleToggleBody = () => {
@@ -10,6 +11,7 @@ const EmailPreview = ({ email }) => {
   }
 
   return (
+    <> <Link to="/"><a onClick={()=>setSelectedEmail(null)}>Back</a></Link>
     <div className="email-preview">
       <div className="email-subject">{email.subject}</div>
       <div className="email-sender">{`From: ${email.sender}`}</div>
@@ -22,6 +24,7 @@ const EmailPreview = ({ email }) => {
         )}
         </div>
     </div>
+    </>
   );
 };
 

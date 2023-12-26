@@ -20,7 +20,7 @@ GmailInterface.css body {
   padding: 20px;
 }
 
-/* Sidebar.css */
+/* Sidebar*/
 
 .sidebar {
   width: 250px;
@@ -92,7 +92,7 @@ GmailInterface.css body {
   color: blue;
 }
 
-/* Header.css */
+/* Header*/
 
 .header {
   background-color: #fff;
@@ -157,7 +157,7 @@ GmailInterface.css body {
   padding: 0 6px;
 }
 
-/* Sidebar.css */
+/* Sidebar*/
 
 .sidebar {
   display: flex;
@@ -183,7 +183,7 @@ GmailInterface.css body {
   margin-bottom: 10px;
 }
 
-/* EmailList.css */
+/* EmailList*/
 
 .email-list {
   flex: 1;
@@ -210,10 +210,9 @@ GmailInterface.css body {
   color: #666;
 }
 
-/* Compose.css */
-
+/* Compose*/
 .compose-container {
-  min-width: 1000px;
+  min-width: calc(100% - 20rem);
   margin: 20px auto;
   padding: 20px;
   background-color: #ffffff;
