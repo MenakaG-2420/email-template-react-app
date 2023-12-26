@@ -1,0 +1,274 @@
+GmailInterface.css body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+.sidebar-link {
+  display: block;
+  color: #202124;
+  text-decoration: none;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color:  rgb(171, 200, 226);
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+.sidebar button {
+  padding: 1rem;
+  border-radius: 20%;
+  background-color: rgb(167, 207, 246);
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.active{
+  background-color: rgb(171, 200, 226);
+}
+
+
+/* EmailPreview*/
+
+.email-preview {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.email-subject {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.email-sender {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.email-body {
+  line-height: 1.6;
+}
+.email-body a{
+  cursor: pointer;
+  color: blue;
+}
+
+/* Header.css */
+
+.header {
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.header-icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header-icon img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+.header-logo {
+  display: flex;
+}
+.header-logo img {
+  width: 40px;
+  height: 40px;
+  padding: 0 6px;
+}
+
+/* Sidebar.css */
+
+.sidebar {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  width: 250px;
+  background-color: #f2f2f2;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.container {
+  flex: 1; /* Take remaining space in the container */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Add margin between sidebar and container */
+}
+
+.container-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* EmailList.css */
+
+.email-list {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  height: calc(100vh - 64px); /* Adjust height based on your layout */
+}
+
+.email-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.email-item:hover {
+  background-color: #f1f3f4;
+}
+
+.email-subject {
+  font-weight: bold;
+}
+
+.email-sender {
+  color: #666;
+}
+
+/* Compose.css */
+
+.compose-container {
+  min-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.compose-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.compose-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.compose-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.compose-textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.compose-button {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.compose-button:hover {
+  background-color: #357ae8;
+}
+
+.compose-cancel-button {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.compose-cancel-button:hover {
+  background-color: #c1c1c1;
+}
+
