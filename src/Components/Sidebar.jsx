@@ -31,7 +31,6 @@ const Sidebar = () => {
         <span className="sidebar-icon">📄</span>
         Drafts
       </Link>
-      {/* Add more folders/labels as needed */}
     </div>
   );
 };

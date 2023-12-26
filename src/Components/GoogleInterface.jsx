@@ -1,4 +1,3 @@
-// GmailInterface.js
 import React, { useEffect, useState } from "react";
 import EmailList from "./EmailList";
 import EmailPreview from "./EmailPreview";
